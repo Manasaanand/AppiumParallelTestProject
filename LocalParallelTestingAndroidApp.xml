@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="tests">
+	<test name="Android9_Latest">
+		<parameter name="port" value="4724"></parameter>
+		<parameter name="deviceID" value="emulator-5554"></parameter>
+		<parameter name="androidVersion" value="9.0"></parameter>
+		<classes>
+			<class name="localparalleltesting.AndroidAp">
+
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="Nexus6_Android">
+
+		<parameter name="port" value="4725"></parameter>
+		<parameter name="deviceID" value="emulator-5556"></parameter>
+		<parameter name="androidVersion" value="8.1"></parameter>
+		<classes>
+			<class name="localparalleltesting.AndroidAp">
+
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
+		
