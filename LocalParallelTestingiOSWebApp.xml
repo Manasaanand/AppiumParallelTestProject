@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="tests">
+<test thread-count="5" name="iPhone Xs">
+		<parameter name="port" value="4567"></parameter>
+		<parameter name="deviceID" value="iPhone Xs"></parameter>
+		<parameter name="iOSVersion" value="12.4"></parameter>
+		<classes>
+			<class name="ioslocalparalleltesting.IOSWebApp">
+
+			</class>
+		</classes>
+	</test> 
+
+
+	 <test thread-count="5" name="iPhone X">
+
+		<parameter name="port" value="4568"></parameter>
+		<parameter name="deviceID" value="iPhone X"></parameter>
+		<parameter name="iOSVersion" value="12.4"></parameter>
+		<classes>
+			<class name="ioslocalparalleltesting.IOSWebApp">
+
+			</class>
+		</classes>
+	</test> 
+
+
+</suite>
+		

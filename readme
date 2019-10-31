@@ -1,5 +1,12 @@
-Find the all.json file in the project path and also the jar file in same project folder
+Appium Version: 1.13.0
+Java Client: Latest Version
 
+
+
+
+ANDROID
+Find the all.json file in the project path and also the jar file in same project folder
+all.josn file has all thde details of the emulator. pls do change as per that
 
 You need to run  hub
 java -jar selenium-server-standalone-{version}.jar -role hub
@@ -29,3 +36,20 @@ ParallelTestLocalAndroidWebSite.xml for website
 
 LocalParallelTestingAndroidApp.xml for androidapp
 
+
+
+IOS
+
+
+Hub
+java -jar selenium-server-standalone-{version}.jar -role hub -hubConfig hub.json
+
+Node 1:
+appium -a localhost -p 4567 --udid {udid of simulator 1} --tmp /tmp/iphonexs --nodeconfig "{project path}/appiumGridFiles/iOS1.json" -g "{project path}/appiumGridFiles//iosDevice1.log" --session-override
+
+
+Node 2:
+appium -a localhost -p 4568 --udid {udid of simulator 2} --tmp /tmp/iphonex --nodeconfig "{project path}/appiumGridFiles/iOS2.json" -g "{project path}/appiumGridFiles/iosDevice2.log" --session-override
+
+LocalParallelTestingiOSApp.xml for a mobile app which is in the project itself
+LocalParallelTestingiOSWebApp.xml it is for a sample website

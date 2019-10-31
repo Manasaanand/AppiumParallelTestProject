@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-skipped">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Regression">
-                    <span>LocalParallelTesting.xml</span>
+                    <span>LocalParallelTestingiOSApp.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods skipped suite-Regression"> (hide)</a> <!-- hide-methods skipped suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods skipped suite-Regression"> (show)</a> <!-- show-methods skipped suite-Regression -->
                     </span>
-                    <div class="method-list-content failed suite-Regression">
+                    <div class="method-list-content skipped suite-Regression">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="localparalleltesting.AndroidAp" hash-for-method="testWebsite">testWebsite</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="ioslocalparalleltesting.IOSApp" hash-for-method="testiOSApp">testiOSApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content skipped suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods passed suite-Regression"> (hide)</a> <!-- hide-methods passed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="localparalleltesting.AndroidAp" hash-for-method="testWebsite">testWebsite</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="ioslocalparalleltesting.IOSApp" hash-for-method="testiOSApp">testiOSApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    </div> <!-- method-list-content passed suite-Regression -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,110 +131,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
+          <div class="suite-Regression-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">localparalleltesting.AndroidAp</span>
+              <img src="skipped.png"/>
+              <span class="class-name">ioslocalparalleltesting.IOSApp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testWebsite">
-                  </a> <!-- testWebsite -->
-                  <span class="method-name">testWebsite</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[@text=&apos;Female&apos;]&apos; does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anands-iMac.local&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/anandjois/eclipse-wo..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, browserName: , databaseEnabled: false, desired: {app: /Users/anandjois/eclipse-wo..., automationName: UiAutomator2, browserName: , device: Android, deviceName: emulator-5556, newCommandTimeout: 14, platformName: android, udid: emulator-5556, version: 8.1}, device: Android, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5556, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5556, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 14, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, udid: emulator-5556, version: 8.1, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: beff02d7-ad64-44e0-9416-59e4779c60f4
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at localparalleltesting.AndroidAp.testWebsite(AndroidAp.java:57)
+                  <a name="testiOSApp">
+                  </a> <!-- testiOSApp -->
+                  <span class="method-name">testiOSApp</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.util.TreeMap.rotateLeft(TreeMap.java:2224)
+	at java.util.TreeMap.fixAfterInsertion(TreeMap.java:2291)
+	at java.util.TreeMap.put(TreeMap.java:582)
+	at org.openqa.selenium.AbstractCapabilities.setCapability(AbstractCapabilities.java:98)
+	at org.openqa.selenium.MutableCapabilities.setCapability(MutableCapabilities.java:100)
+	at org.openqa.selenium.MutableCapabilities.setCapability(MutableCapabilities.java:83)
+	at ioslocalparalleltesting.IOSApp.startTest(IOSApp.java:37)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWebsite">
-                  </a> <!-- testWebsite -->
-                  <span class="method-name">testWebsite</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Anands-iMac.local&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/anandjois/eclipse-wo..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, browserName: , databaseEnabled: false, desired: {app: /Users/anandjois/eclipse-wo..., automationName: UiAutomator2, browserName: , device: Android, deviceName: emulator-5554, newCommandTimeout: 14, platformName: android, udid: emulator-5554, version: 9.0}, device: Android, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 14, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, udid: emulator-5554, version: 9.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 56f56e64-d4b3-480c-aba3-6dfcfc2dc0fc
-*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;Argentina&quot;));}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
-	at localparalleltesting.AndroidAp.testWebsite(AndroidAp.java:59)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ioslocalparalleltesting.IOSApp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testiOSApp">
+                  </a> <!-- testiOSApp -->
+                  <span class="method-name">testiOSApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
         </div> <!-- panel Regression -->
         <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/anandjois/eclipse-workspace2/AppiumParallelProject/LocalParallelTesting.xml</span>
+            <span class="header-content">/Users/anandjois/eclipse-workspace/AppiumParallelTestProject/LocalParallelTestingiOSApp.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Android9_Latest&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;port&quot; value=&quot;4724&quot;/&gt;
-    &lt;parameter name=&quot;androidVersion&quot; value=&quot;9.0&quot;/&gt;
-    &lt;parameter name=&quot;deviceID&quot; value=&quot;emulator-5554&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;iPhone Xs&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;port&quot; value=&quot;4567&quot;/&gt;
+    &lt;parameter name=&quot;iOSVersion&quot; value=&quot;12.4&quot;/&gt;
+    &lt;parameter name=&quot;deviceID&quot; value=&quot;iPhone Xs&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;localparalleltesting.AndroidAp&quot;/&gt;
+      &lt;class name=&quot;ioslocalparalleltesting.IOSApp&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Android9_Latest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Nexus6_Android&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;port&quot; value=&quot;4725&quot;/&gt;
-    &lt;parameter name=&quot;androidVersion&quot; value=&quot;8.1&quot;/&gt;
-    &lt;parameter name=&quot;deviceID&quot; value=&quot;emulator-5556&quot;/&gt;
+  &lt;/test&gt; &lt;!-- iPhone Xs --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;iPhone X&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;port&quot; value=&quot;4568&quot;/&gt;
+    &lt;parameter name=&quot;iOSVersion&quot; value=&quot;12.4&quot;/&gt;
+    &lt;parameter name=&quot;deviceID&quot; value=&quot;iPhone X&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;localparalleltesting.AndroidAp&quot;/&gt;
+      &lt;class name=&quot;ioslocalparalleltesting.IOSApp&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Nexus6_Android --&gt;
+  &lt;/test&gt; &lt;!-- iPhone X --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,10 +212,10 @@ Session ID: 56f56e64-d4b3-480c-aba3-6dfcfc2dc0fc
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Android9_Latest (1 class)</span>
+                <span class="test-name">iPhone Xs (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Nexus6_Android (1 class)</span>
+                <span class="test-name">iPhone X (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -268,18 +243,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testWebsite')
-data.setCell(0, 2, 'localparalleltesting.AndroidAp')
-data.setCell(0, 3, 9057);
+data.setCell(0, 1, 'testiOSApp')
+data.setCell(0, 2, 'ioslocalparalleltesting.IOSApp')
+data.setCell(0, 3, 9395);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testWebsite')
-data.setCell(1, 2, 'localparalleltesting.AndroidAp')
-data.setCell(1, 3, 6618);
+data.setCell(1, 1, 'testiOSApp')
+data.setCell(1, 2, 'ioslocalparalleltesting.IOSApp')
+data.setCell(1, 3, 0);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -305,34 +280,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">localparalleltesting.AndroidAp</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ioslocalparalleltesting.IOSApp</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testiOSApp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class before">
-                <span class="method-name">startTest(4725, emulator-5556, 8.1)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">startTest(4568, iPhone X, 12.4)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">startTest(4724, emulator-5554, 9.0)</span>
+                <span class="method-name">startTest(4567, iPhone Xs, 12.4)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testWebsite</span>
-                <span class="method-start">11408 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testWebsite</span>
-                <span class="method-start">12548 ms</span>
+                <span class="method-name">testiOSApp</span>
+                <span class="method-start">12051 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">qui</span>
-                <span class="method-start">19168 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">qui</span>
-                <span class="method-start">20466 ms</span>
+                <span class="method-start">21447 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

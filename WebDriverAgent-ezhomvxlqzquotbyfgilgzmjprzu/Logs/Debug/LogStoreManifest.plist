@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>57C1CAC3-C107-4C2F-9532-48F741FC8AB5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>57C1CAC3-C107-4C2F-9532-48F741FC8AB5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WebDriverAgent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IntegrationApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug IntegrationApp</string>
+			<key>timeStartedRecording</key>
+			<real>592579718.19358802</real>
+			<key>timeStoppedRecording</key>
+			<real>592579773.41096604</real>
+			<key>title</key>
+			<string>Debug IntegrationApp</string>
+			<key>uniqueIdentifier</key>
+			<string>57C1CAC3-C107-4C2F-9532-48F741FC8AB5</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

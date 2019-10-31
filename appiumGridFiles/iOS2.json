@@ -1,0 +1,30 @@
+{
+    "capabilities": [
+        {
+            "browserName": "iPhone X",
+            "version": "12.4",
+            "maxInstances": 1,
+            "platform":"MAC",
+            "platformName":"iOS",
+            "deviceName":"iPhone X"
+            
+            
+        }
+    ],
+    
+    "configuration":
+    {
+    "cleanUpCycle": 5000,
+    "registerCycle" : 5000,
+    "nodeTimeout": 120,
+    "timeout":60000,
+    "nodePolling":2000,
+    "maxSession":1,
+    "port": 6666,
+    "host":"localhost",
+    "register": true,
+    "hubPort": 4444,
+    "hubHost": "localhost",
+    "role": "node"
+    }
+}

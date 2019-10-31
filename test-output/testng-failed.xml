@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="tests">
-  <test thread-count="5" name="Nexus6_Android(failed)" parallel="tests">
-    <parameter name="port" value="4725"/>
-    <parameter name="androidVersion" value="8.1"/>
-    <parameter name="deviceID" value="emulator-5556"/>
+  <test thread-count="5" name="iPhone X(failed)" parallel="tests">
+    <parameter name="port" value="4568"/>
+    <parameter name="iOSVersion" value="12.4"/>
+    <parameter name="deviceID" value="iPhone X"/>
     <classes>
-      <class name="localparalleltesting.AndroidAp">
+      <class name="ioslocalparalleltesting.IOSApp">
         <methods>
-          <include name="testWebsite"/>
           <include name="startTest"/>
           <include name="qui"/>
+          <include name="testiOSApp"/>
         </methods>
-      </class> <!-- localparalleltesting.AndroidAp -->
+      </class> <!-- ioslocalparalleltesting.IOSApp -->
     </classes>
-  </test> <!-- Nexus6_Android(failed) -->
-  <test thread-count="5" name="Android9_Latest(failed)" parallel="tests">
-    <parameter name="port" value="4724"/>
-    <parameter name="androidVersion" value="9.0"/>
-    <parameter name="deviceID" value="emulator-5554"/>
-    <classes>
-      <class name="localparalleltesting.AndroidAp">
-        <methods>
-          <include name="testWebsite"/>
-          <include name="startTest"/>
-          <include name="qui"/>
-        </methods>
-      </class> <!-- localparalleltesting.AndroidAp -->
-    </classes>
-  </test> <!-- Android9_Latest(failed) -->
+  </test> <!-- iPhone X(failed) -->
 </suite> <!-- Failed suite [Regression] -->

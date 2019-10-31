@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>ED71D7A9-1AE0-4971-8830-5FCE3F8F3C41</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ED71D7A9-1AE0-4971-8830-5FCE3F8F3C41.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WebDriverAgent project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IntegrationApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build IntegrationApp</string>
+			<key>timeStartedRecording</key>
+			<real>592579709.55744195</real>
+			<key>timeStoppedRecording</key>
+			<real>592579718.18089604</real>
+			<key>title</key>
+			<string>Build IntegrationApp</string>
+			<key>uniqueIdentifier</key>
+			<string>ED71D7A9-1AE0-4971-8830-5FCE3F8F3C41</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
