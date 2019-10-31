@@ -8,6 +8,15 @@ YOu need to run two nodes in two different ports 4724 and 4725 respectively
 I have two emulators 
 emulator-5554 and emulator-5556 respectively
 
+emulator-5554 details
+Android version: 9.0
+port assigned:4724
+
+emulator-5554 details
+Android version: 8.1
+port assigned:4725
+
+
 Node1:
 appium -p 4724 --udid emulator-5554 -bp 5556 --chromedriver-port 5645 --nodeconfig "{project path}/appiumGridFiles/alljson" -g "{project path}/appiumGridFiles/appium1.log" --session-override
 
