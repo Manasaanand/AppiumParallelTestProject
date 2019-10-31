@@ -7,7 +7,7 @@
 		<parameter name="deviceID" value="emulator-5554"></parameter>
 		<parameter name="androidVersion" value="9.0"></parameter>
 		<classes>
-			<class name="localparalleltesting.TestWebBrowserAndroid" />
+			<class name="androidlocalparalleltesting.TestWebBrowserAndroid" />
 		</classes>
 	</test>
 
@@ -16,7 +16,7 @@
 		<parameter name="deviceID" value="emulator-5556"></parameter>
 			<parameter name="androidVersion" value="8.1"></parameter>
 		<classes>
-			<class name="localparalleltesting.TestWebBrowserAndroid" />
+			<class name="androidlocalparalleltesting.TestWebBrowserAndroid" />
 		</classes>
 	</test>
 </suite>

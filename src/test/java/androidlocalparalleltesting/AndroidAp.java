@@ -1,4 +1,4 @@
-package localparalleltesting;
+package androidlocalparalleltesting;
 
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 import static io.appium.java_client.touch.TapOptions.tapOptions;
