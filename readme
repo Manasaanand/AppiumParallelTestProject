@@ -1,0 +1,22 @@
+Find the all.json file in the project path and also the jar file in same project folder
+
+
+You need to run  hub
+java -jar selenium-server-standalone-{version}.jar -role hub
+
+YOu need to run two nodes in two different ports 4724 and 4725 respectively
+I have two emulators 
+emulator-5554 and emulator-5556 respectively
+
+Node1:
+appium -p 4724 --udid emulator-5554 -bp 5556 --chromedriver-port 5645 --nodeconfig "{project path}/appiumGridFiles/alljson" -g "{project path}/appiumGridFiles/appium1.log" --session-override
+
+Node2:
+appium -p 4725 --udid emulator-5556 -bp 5556 --chromedriver-port 5645 --nodeconfig "{project path}/appiumGridFiles/alljson" -g "{project path}/appiumGridFiles/appium2.log" --session-override
+
+Now down load the project
+run the 
+ParallelTestLocalAndroidWebSite.xml for website
+
+LocalParallelTestingAndroidApp.xml for androidapp
+
