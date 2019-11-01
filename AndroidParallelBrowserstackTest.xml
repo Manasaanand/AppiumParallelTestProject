@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="tests">
+	<test thread-count="5" name="Android">
+		<!-- <parameter name="port" value="4724"></parameter> -->
+		<parameter name="deviceID" value=" samsung galaxy s8"></parameter>
+		<!-- <parameter name="androidVersion" value="4.4"></parameter> -->
+		<parameter name="appDetails"
+			value="bs://9e181b24250d20c3ce4f05ff352961f154499e2d"></parameter>
+		<classes>
+			<class name="browserstackparalleltesting.AndroidNativeApp" />
+		</classes>
+	</test>
+
+
+	
+<test thread-count="5" name="IOS">
+		<!-- <parameter name="port" value="4725"></parameter> -->
+		<parameter name="deviceID" value="iPhone X"></parameter>
+		<!-- <parameter name="iOSVersion" value="9.3"></parameter> -->
+		<parameter name="appDetails"
+			value="bs://444bd0308813ae0dc236f8cd461c02d3afa7901d"></parameter>
+		<classes>
+			<class name="browserstackparalleltesting.IOSNativeApp" />
+		</classes>
+	</test> 
+</suite>

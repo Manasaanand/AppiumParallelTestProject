@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="tests">
+	<test thread-count="5" name="IOS 1">
+		<parameter name="deviceID" value="iPhone X"></parameter>
+		<parameter name="appDetails"
+			value="bs://444bd0308813ae0dc236f8cd461c02d3afa7901d"></parameter>
+		<classes>
+			<class name="browserstackparalleltesting.IOSNativeApp" />
+		</classes>
+	</test>
+
+
+	<test thread-count="5" name="IOS 2">
+		<parameter name="deviceID" value="iPhone XR"></parameter>
+		<parameter name="appDetails"
+			value="bs://444bd0308813ae0dc236f8cd461c02d3afa7901d"></parameter>
+		<classes>
+			<class name="browserstackparalleltesting.IOSNativeApp" />
+		</classes>
+	</test>
+</suite>
