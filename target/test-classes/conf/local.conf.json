@@ -1,0 +1,14 @@
+{
+	"server": "hub-cloud.browserstack.com",
+	"user": "anandjois1",
+	"key": "MASi6q41mPmfVjrvMpxw",
+	"capabilities": {
+		"name": "Bstack-[TestNG] Local Test",
+		"browserstack.local": true
+	},
+	"environments": {
+		"chrome": {
+			"browser": "chrome"
+		}
+	}
+}

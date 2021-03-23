@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel_Testing]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="parallelwebtestingbrowserstack.ParallelTestWithMultiThread">
+        <methods>
+          <include name="close"/>
+          <include name="testOnChromeWithBrowserStackSignUp"/>
+        </methods>
+      </class> <!-- parallelwebtestingbrowserstack.ParallelTestWithMultiThread -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Parallel_Testing] -->

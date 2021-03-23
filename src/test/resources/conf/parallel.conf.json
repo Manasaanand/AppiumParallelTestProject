@@ -1,0 +1,25 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "anandjois1",
+  "key": "MASi6q41mPmfVjrvMpxw",
+
+  "capabilities": {
+    "name": "Bstack-[TestNG] Parallel Test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "browser": "safari"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    }
+  }
+}
